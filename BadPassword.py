@@ -3,12 +3,11 @@ import pandas as pd
 import numpy as np
 import re
 from string import punctuation
-
-# Visualization
 import seaborn as sns
 import matplotlib.pyplot as plt
 from wordcloud import WordCloud
 
+#exporting the files
 url = "https://raw.githubusercontent.com/first20hours/google-10000-english/master/google-10000-english-no-swears.txt"
 response = requests.get(url)
 
@@ -56,19 +55,16 @@ users['common_password'] = users['password'].str.lower().isin( common_passwords)
 
 
 print("Number of users using common passwords :"+str(sum(users['common_password'])))
-# The 6 first rows
 
 
 # Reading in a list of the 10000 most common words
 words = pd.read_csv("google-10000-english-no-swears.txt",
                               header=None)
-#The 6 first rows
 
 users['common_word'] = users['password'].str.lower().isin(words)
 
 
 print("The number of users using common words as passwords :"+str(sum(users['common_word'])))
-# The 6 first rows
 
 
 # Saperating firstname and last name from your username
@@ -80,13 +76,13 @@ users['uses_name'] = (users['password'] == users['first_name'])|\
                      (users['password'] == users['last_name'])
 
 print("The number of users using names as passwords :"+str(sum(users['uses_name'])))
-# Taking a look at the 6 first rows
 
 ### Flagging the users with passwords with >= 4 repeats
 users['too_many_repeats'] = users['password'].str.contains(r'(.)\1\1\1\1\1');
 
 # Taking a look at the users with too many repeats
 print("Number of passwords with > 4 repeat character :"+str(users['too_many_repeats'].sum()));
+
 
 #Password should have at least one numerical
 #Password should have at least one uppercase letter
@@ -191,14 +187,12 @@ users['bad_password'] = users['too_short']|\
 
 
 print("The number of bad passwords :"+str(users['bad_password'].sum())+"/"+str(len(users["password"])))
-# The first 6 bad passwords
 
 # Checking password validity 
 users['bad_password'] = users['strength']>6
 
 
 print("The number of bad passwords :"+str(users['bad_password'].sum())+"/"+str(len(users["password"])))
-# The first 6 bad passwords
 
 def bad_pass(username,password):
     too_short = True
