@@ -35,3 +35,5 @@
 * synthetic_username_password.csv contains the list of passwords and the fake user database both contain real passwords leaked from real websites.
 
 <p> More can be found <a href="https://gitlab.com/kalilinux/packages/seclists/-/tree/kali/master/Passwords/Common-Credentials">here</a></p>
+
+🧑‍💻Don't hesitate to visite the code file (BadPassword.py) where everything is more detailed, feel free to comment and give ideas.👋
