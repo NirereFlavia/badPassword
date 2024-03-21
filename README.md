@@ -30,10 +30,12 @@
     - https://gist.githubusercontent.com/kingabzpro/d22c3e672083a4fa59c33faf132d116f/raw/377dd517f2dd33e2ea03dda3ba3db03321ac54db/synthetic_username_password.csv
     
 ### Uses of the files
-* 10-million-password-list-top-1000000.txt contains the number of very popular lists in cooperation with their maintainers, including the RockYou lists maintained by Rob Bowes.
+* 10-million-password-list-top-1000000.txt contains the number of very popular lists in cooperation with their maintainers, including the RockYou lists maintained by Rob Bowes.<p> More can be found <a href="https://gitlab.com/kalilinux/packages/seclists/-/tree/kali/master/Passwords/Common-Credentials">here</a></p>
 * google-10000-english-no-swears.txt contains most comon words used on google without swear words, last updated 2 years ago.
 * synthetic_username_password.csv contains the list of passwords and the fake user database both contain real passwords leaked from real websites.
 
-<p> More can be found <a href="https://gitlab.com/kalilinux/packages/seclists/-/tree/kali/master/Passwords/Common-Credentials">here</a></p>
+<h>More explaination can be found <a href="https://www.kaggle.com/code/kingabzpro/finding-the-bad-password">here</a></h>
+
+
 
 🧑‍💻Don't hesitate to visite the code file (BadPassword.py) where everything is more detailed, feel free to comment and give ideas.👋
