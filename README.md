@@ -34,7 +34,7 @@
 * google-10000-english-no-swears.txt contains most comon words used on google without swear words, last updated 2 years ago.
 * synthetic_username_password.csv contains the list of passwords and the fake user database both contain real passwords leaked from real websites.
 
-<h>More explaination can be found <a href="https://www.kaggle.com/code/kingabzpro/finding-the-bad-password">here</a></h>
+<h>More explanation can be found <a href="https://www.kaggle.com/code/kingabzpro/finding-the-bad-password">here</a></h>
 
 
 
