@@ -1,4 +1,4 @@
-### Hello there, I am NirereFlavia👋
+### Hello there, I am Nirere Flavia👋
 
 <h1> Today we are studying dectecting bad Password</h1>
 
